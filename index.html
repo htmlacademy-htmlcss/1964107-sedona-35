@@ -5,10 +5,10 @@
     <title>HTML Academy: Седона</title>
   </head>
    <body>
-    <header class="page-header">
+    <Шапка data-test="header" ></Шапка>
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип город Седона" src="#">
+          <img class="page-header-logo" alt="Логотип города Седона" src="#">
         </a>
         <ul class="navigation-list">
             <li class="navigation-item">
@@ -32,24 +32,29 @@
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">
-                Избранное
+                Избранное 12
               </span>
             </a>
           </li>
             <li class="navigation-item">
-              <button type="button" class="button">Хочу сюда!</button>
+              <button type="button" class="button"></button>
             </li>
+            <a class="logoheader" href="#">Хочу сюда!</a>
           </ul>
       </nav>
     </header>
+    <основное-содержание data-test="main">
     <main class="main-index">
-      <h1 class="visually-hidden">Седона</h1>
+      <блок-герой data-test="hero">
+      <h1 class="visually-hidden">Седона-городок в Аризоне</h1>
       <img class="welcome" src="#" alt="Приветствие">
       <h2 class="description-main">Седона — небольшой городок в Аризоне,
       заслуживающий большего!</h2>
       <p class="description-main-title">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      </блок-герой>
+      <блок-преимуществ data-test="advantages">
       <section class="advantages">
-        <h3 class="visually-hidden">Преимущества</h3>
+        <h3 class="visually-hidden">Преимущества перед Гранд-Каньооном</h3>
         <ul  class="advantages-list">
           <li class="advantages-item">
             <h4 class="advantages-title">Настоящий городок</h4>
@@ -91,19 +96,26 @@
             </li>
         </ul>
       </section>
+      </блок-преимуществ>
+      <блок-поиска data-test="search">
       <section class="search-hotels">
         <h2 class="hotels-title">Заинтересовались?</h2>
         <p class="hotels-title-offers">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button type="button" class="button-search-hotels">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       </section>
-      <section class="newsletter">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="newsletter-form" action="#" method="post">
-          <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button newsletter-button" type="submit">Подписаться</button>
+      </блок-поиска>
+      <блок-подписки data-test="subscribe">
+      <section class="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="nsubscribe-form" action="#" method="post">
+          <input class="field"  placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
+          <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
+      </блок-подписки >
+      </основное-содержание>
+      <подвал data-test="footer">
       <footer class="page-footer">
         <section class="footer-social">
           <h2 class="social">Социальные сети</h2>
@@ -137,6 +149,7 @@
           </p>
         </section>
       </footer>
+      </подвал>
     </main>
   </body>
 </html>
