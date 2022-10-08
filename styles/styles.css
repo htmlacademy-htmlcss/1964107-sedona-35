@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.header {
+background-color: #FFFFFF;
+color: #000000;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navigation-item {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.logo-header {
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: #FFFFFF;
+text-transform: uppercase;
+background-color: #756157;
+}
+
+.main-index {
+  color:#000000;
+  background-color: #FFFFFF;
+}
+
+.hero {
+  width: 100%;
+  height: 756px;
+  background-image: url(../images/hero/hero-background.jpg);
+  background-position: top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.description-main {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.description-main-title {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-item {
+  list-style-type: none;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-title.photo {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.advantages-title.bright {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-title.food {
+  background-color: #FFFFFF;
+}
+
+.advantages-discription {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advantages-discription.photo {
+  color: #FFFFFF;
+}
+
+.search-title {
+font-size: 30px;
+line-height: 36px;
+font-weight: 700;
+text-align: center;
+}
+
+.search-title-offers {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.search {
+  width: 1200px;
+  height: 406px;
+  background-color: #FFFFFF;
+}
+
+.search-hotels {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-decoration: none;
+}
+
+.subscribe {
+  width: 1200px;
+  height: 415px;
+  background-image: url(../images/subscribe/subscribe-backgrond.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #756157;
+  color: #FFFFFF;
+}
+
+.subscribe-title {
+ font-size: 30px;
+ line-height: 36px;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+.subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.field::placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.subscribe-button {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer {
+  background-color: #FFFFFF;
+  width: 1200px;
+  height: 120px;
+}
+
+.contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.filter {
+  width: 1200px;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: #000000;
+  background-image: url(../images/catalog/catalog-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.filter-title {
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.breadcrumbs-item {
+  list-style-type: none;
+}
