@@ -100,21 +100,20 @@
                 </label>
               </li>
               </ul>
-            </legend>
           </fieldset>
-          <legend class="hotels-filter-title">Стоимость,₽:</legend>
-              <input class="button" type="submit">Применить</input>
-              <input class="reset" type="reset"></input>
+          <div class="hotels-filter-title">Стоимость,₽:</div>
+              <input class="button-catalog" value="Применить" type="submit">
+              <input class="button-catalog reset" value="Сбросить" type="reset">
         </form>
       </div>
 
       <section data-test="catalog" class="search-result">
         <h2 class="visually-hidden">Результаты поиска гостиниц с фильтрами</h2>
-        <h2 class="search-result-title">Найдено гостиниц: <span>38</span></h2>
+        <h2 class="search-result-title">Найдено гостиниц:38</h2>
         <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="expensive">Сначала дорогое</option>
-          <option value="popular">Сначала популярное</option>
+          <option value="cheap">Сначала дешёвые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
         </select>
         <ul class="sorting-cart-list">
           <li class="sorting-cart">
@@ -133,56 +132,56 @@
             </a>
           </li>
         </ul>
-        <ul class="hotels-list">
-         <li class="hotels-card">
+        <div class="hotels-list">
+         <article class="hotels-card">
           <a class="hotels-card-link" href="#">
             <img class="hotels-card-image" src="images/catalog/hotel-amara.jpg" width="300" height="212" alt="Звездное небо в ращелине гор">
             <h3 class="hotels-card-title">Amara Resort & Spa</h3>
             <p class="hotels-card-list">Гостиница</p>
-            <p class="hotels-card-price">От 4000 p</p>
+            <p class="hotels-card-list hotels-card-price">От 4000 p</p>
           </a>
           <a class="info-card" href="#">Подробнее</a>
-          <a class="hotels-card-favorites" href="#">В избранное</a>
-          <span class="star-hotels">4 звезды</span>
+          <input class="hotels-card-favorites" value="В избранное" type="submit">
+          <span class="star-hotels-four">4 звезды</span>
           <span class="rating">Рейтинг:8.5</span>
-         </li>
-         <li class="hotels-card">
+         </article>
+         <article class="hotels-card">
           <a class="hotels-card-link" href="#">
             <img class="hotels-card-image" src="images/catalog/hotel-villas.jpg" width="300" height="212" alt="Радуга над горами">
             <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
             <p class="hotels-card-list">Гостиница</p>
-            <p class="hotels-card-price">От 5000 p</p>
+            <p class="hotels-card-list hotels-card-price">От 5000 p</p>
           </a>
           <a class="info-card" href="#">Подробнее</a>
-          <a class="hotels-card-favorites" href="#">В избранном</a>
-          <span class="star-hotels">4 звезды</span>
+          <input class="hotels-card-favorites checked" value="В избранном" type="submit">
+          <span class="star-hotels-four">4 звезды</span>
           <span class="rating">Рейтинг:9.2</span>
-         </li>
-         <li class="hotels-card">
+         </article>
+         <article class="hotels-card">
           <a class="hotels-card-link" href="#">
             <img class="hotels-card-image" src="images/catalog/hotel-desert.jpg" width="300" height="212" alt="Гора на фоне синего неба">
             <h3 class="hotels-card-title">Desert Quail Inn</h3>
             <p class="hotels-card-list">Гостиница</p>
-            <p class="hotels-card-price">От 2500 p</p>
+            <p class="hotels-card-list hotels-card-price">От 2500 p</p>
           </a>
           <a class="info-card" href="#">Подробнее</a>
-          <a class="hotels-card-favorites" href="#">В избранное</a>
-          <span class="star-hotels">4 звезды</span>
+          <input class="hotels-card-favorites" value="В избранное" type="submit">
+          <span class="star-hotels-three">3 звезды</span>
           <span class="rating">Рейтинг:8.5</span>
-         </li>
-         <li class="hotels-card">
+         </article>
+         <article class="hotels-card">
            <a class="hotels-card-link" href="#">
             <img class="hotels-card-image" src="images/catalog/hotel-green-tree.jpg" width="300" height="212" alt="Гора на фоне звездного неба">
             <h3 class="hotels-card-title">GreenTree Inn</h3>
             <p class="hotels-card-list">Гостиница</p>
-            <p class="hotels-card-price">От 1500 p</p>
+            <p class="hotels-card-list hotels-card-price">От 1500 p</p>
            </a>
           <a class="info-card" href="#">Подробнее</a>
           <a class="hotels-card-favorites" href="#">В избранное</a>
-          <span class="star-hotels">4 звезды</span>
+          <span class="star-hotels-two">2 звезды</span>
           <span class="rating">Рейтинг:8.5</span>
-         </li>
-        </ul>
+         </article>
+        </div>
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
@@ -197,26 +196,24 @@
           <a class="pagination-link" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-list">
-            <span class="visually-hidden">...</span>
-          </a>
+            <span class="pagination-link-dot">...</span>
+        </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
       </section>
-
-      <section data-test="subscribe" class="subscribe">
+      <section data-test="subscribe" class="subscribe catalog">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe-form" action="#" method="post">Ваш E-mail
+        <form class="nsubscribe-form" action="#" method="post">
           <input class="field"  placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
+          <input class="button subscribe-button" value="Подписаться" type="submit">
         </form>
-        <button class="button subscribe-button" type="submit">Подписаться</button>
       </section>
     </main>
     <footer data-test="footer" class="footer">
-      <section class="footer-social">
+      <div class="footer-social">
         <ul class="footer-social-list">
           <li class="foter-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
@@ -243,8 +240,7 @@
           </a>
         </p>
        </div>
-      </section>
+      </div>
     </footer>
-  </main>
 </body>
 </html>
