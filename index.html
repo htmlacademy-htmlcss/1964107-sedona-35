@@ -36,8 +36,8 @@
               <img class="social-link" src="images/header/favorites.svg" alt="Избранное">
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link logo-header" href="#">Хочу сюда!</a>
+          <li class="navigation-item link-header">
+            <a class="link-header" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -46,104 +46,89 @@
     <main data-test="main-index" class="main-container main-index">
         <section data-test="hero" class="hero">
           <h1 class="visually-hidden">Седона-городок в Аризоне</h1>
-          <div class="hero-background-position">
           <img class="hero-background" src="images/hero/hero-welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona,'because the Grand-Qanyon sucks!'">
-          </div>
         </section>
         <section data-test="advantages" class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="description">
-          <h2 class="description-main">Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
+          <h2 class="description-main">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="description-main-title">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
 
         <div class="advantages-list">
 
-          <article class="advantages-item-photo">
-            <div class="advantages-title-photo">
-              <h3 class="advantages-heading photo">Настоящий городок</h3>
-              <div class="line-photo"></div>
-              <p class="advantages-discription photo">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <article class="advantages-item photo">
+            <div class="advantages-title">
+             <h3 class="advantages-heading photo">Настоящий городок</h3>
+             <div class="line photo"></div>
+             <p class="advantages-discription">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <div class="advantages-title-photo">
-             <div class="title-photo">
-              <img class="foto-city" src="images/advantages/city-photo.jpg" alt="Домики на фоне гор." width="800" height="384">
-             </div>
+            <img class="foto-city" src="images/advantages/city-photo.jpg" alt="Домики на фоне гор." width="800" height="384">
+          </article>
+
+          <article class="advantages-item">
+            <div class="advantages-title">
+             <h3 class="advantages-heading">Небольшая площадь</h3>
+             <div class="line"></div>
+             <p class="advantages-discription">Все достопримечательности находятся очень близко</p>
+            </div>
+          </article>
+
+          <article class="advantages-item road">
+            <div class="advantages-title">
+             <h3 class="advantages-heading">Красивая дорога</h3>
+             <div class="line"></div>
+             <p class="advantages-discription">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </article>
 
           <article class="advantages-item">
-            <div class="advantages-title-list">
-             <div class="advantages-title">
-              <h3 class="advantages-heading">Небольшая площадь</h3>
-              <div class="line"></div>
-              <p class="advantages-discription">Все достопримечательности находятся очень близко</p>
-             </div>
-            </div>
-            <div class="advantages-title-list road">
-             <div class="advantages-title">
-              <h3 class="advantages-heading">Красивая дорога</h3>
-              <div class="line"></div>
-              <p class="advantages-discription">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-             </div>
-            </div>
-            <div class="advantages-title-list">
-             <div class="advantages-title">
-              <h3 class="advantages-heading">Мало туристов</h3>
-              <div class="line"></div>
-              <p class="advantages-discription">Большинство едет в Гранд Каньон и толпится там</p>
-             </div>
+            <div class="advantages-title">
+             <h3 class="advantages-heading">Мало <br> туристов</h3>
+             <div class="line"></div>
+             <p class="advantages-discription">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </article>
 
-          <article class="advantages-item-photo">
-            <div class="advantages-title-photo">
-              <h3 class="advantages-heading photo">Там есть мост дьявола</h3>
-              <div class="line-photo"></div>
-              <p class="advantages-discription photo">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </div>
-            <div class="advantages-title-photo bridge">
-             <div class="title-photo">
-              <img class="foto-bridge" src="images/advantages/devils-bridge.jpg" alt="Каньон, горы, снова горы" width="800" height="384">
-             </div>
+          <article class="advantages-item photo">
+            <img class="foto-bridge" src="images/advantages/devils-bridge.jpg" alt="Каньон, горы, снова горы" width="800" height="384">
+            <div class="advantages-title">
+             <h3 class="advantages-heading photo">Там есть <br> мост дьявола</h3>
+             <div class="line photo"></div>
+             <p class="advantages-discription">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
           </article>
-          <article class="advantages-item-icon">
-            <div class="advantages-title-icon-list">
-              <div class="advantages-title-icon house">
-                <div class="advantages-icon">
-                 <img class="icon" src="images/advantages/advantages-house.svg" alt="Жилье,дом" width="75" height="72">
-                </div>
-                <h3 class="advantages-heading">Жилье</h3>
-                <p class="advantages-discription icon">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </div>
+
+          <article class="advantages-item">
+            <div class="advantages-title">
+             <img class="icon" src="images/advantages/advantages-house.svg" alt="Жилье,дом" width="75" height="72">
+             <h3 class="advantages-heading">Жилье</h3>
+             <p class="advantages-discription icon">Рекомендуем пожить <br> в настоящем мотеле,<br> всё как в кино!</p>
             </div>
-            <div class="advantages-title-icon-list food">
-              <div class="advantages-title-icon">
-                <div class="advantages-icon">
-                 <img class="icon" src="images/advantages/advantages-food.svg" alt="Еда,бургер" width="74" height="70">
-                </div>
-                <h3 class="advantages-heading">Еда</h3>
-                <p class="advantages-discription icon">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-              </div>
-            </div>
-            <div class="advantages-title-icon-list">
-              <div class="advantages-title-icon">
-                <div class="advantages-icon">
-                 <img class="icon" src="images/advantages/advantages-souvenirs.svg" alt="Подарок,суыенир" width="64" height="76">
-                </div>
-                <h3 class="advantages-heading">Сувениры</h3>
-                <p class="advantages-discription icon">Не только китайского, но и настоящего местного производства!</p>
-              </div>
-            </div>
-           </article>
+          </article>
+
+          <article class="advantages-item food">
+           <div class="advantages-title">
+            <img class="icon" src="images/advantages/advantages-food.svg" alt="Еда,бургер" width="74" height="70">
+            <h3 class="advantages-heading">Еда</h3>
+            <p class="advantages-discription icon">Всегда заказывайте <br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+           </div>
+          </article>
+
+          <article class="advantages-item">
+           <div class="advantages-title">
+            <img class="icon" src="images/advantages/advantages-souvenirs.svg" alt="Подарок,сувенир" width="64" height="76">
+            <h3 class="advantages-heading">Сувениры</h3>
+            <p class="advantages-discription icon">Не только китайского,<br> но и настоящего местного <br> производства!</p>
+           </div>
+          </article>
         </div>
       </section>
 
       <section data-test="search" class="search">
         <article class="search-title-list">
          <h2 class="search-title">Заинтересовались?</h2>
-         <p class="search-title-offers">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+         <p class="search-title-offers">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
          <a class="search-hotels" href="#">Поиск гостиницы в Седоне</a>
         </article>
       </section>
@@ -151,8 +136,8 @@
       <section data-test="subscribe" class="subscribe">
         <article class="subscribe-title-list">
          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-         <form class="nsubscribe-form" action="#" method="post">
+         <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+         <form class="subscribe-form" action="#" method="post">
            <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
            <input class="button subscribe-button" value="Подписаться" type="submit">
          </form>
