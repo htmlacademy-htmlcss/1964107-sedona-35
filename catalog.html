@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
   </head>
   <body>
     <div class="container">
@@ -27,14 +28,15 @@
             <li class="navigation-item user">
               <a class="navigation-link" href="#">
                <span class="visually-hidden">Поиск</span>
-               <img class="social-link" src="images/header/search.svg" alt="Лупа поиск">
+               <svg width="19" height="19" xmlns="http://www.w3.org/2000/svg"><path d="m18.5 17.17-3.7-3.68c1-1.29 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96 8 8 0 1 0 4.9 14.32l3.7 3.69 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.97 6 6 0 0 1 12 0 6 6 0 0 1-6 5.97Z"/></svg>
               </a>
             </li>
             <li class="navigation-item user">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="favorites">12</span>
-                <img class="social-link" src="images/header/favorites.svg" alt="Избранное">
+                <svg width="19" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.9 17.17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5.17c1.3 0 2.5.5 3.5 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
               </a>
             </li>
             <li class="navigation-item link-header">
@@ -53,14 +55,14 @@
          <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
            <a class="index-icon" href="index.html">
-           <img class="house" src="/images/catalog/catalog-icon-house.svg" alt="Главная страница">
+            <svg width="13" height="13" xmlns="http://www.w3.org/2000/svg"><path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/><path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/></svg>
            </a>
           </li>
           <li class="breadcrumbs-item item-arrow">
             <img class="breadcrumbs-arrow" src="images/catalog/catalog-arrow.svg" alt="Стрелка">
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
+            <a class="breadcrumbs-link" href="#">Гостиницы</a>
           </li>
          </ul>
         </div>
@@ -127,11 +129,9 @@
           <div class="catalog-card-title">
            <h2 class="visually-hidden">Результаты поиска гостиниц с фильтрами</h2>
            <h2 class="search-result-title">Найдено гостиниц:38</h2>
-           <select class="select-control" aria-label="Сортировка">
-           <option value="cheap">Сначала дешёвые</option>
-           <option value="expensive">Сначала дорогие</option>
-           <option value="popular">Сначала популярные</option>
-           </select>
+           <button class="button-sorting" type="button">Сначала дешёвые
+            <svg class="arrow-down" width="12" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6.67 7.71 5.1-5.3c.3-.3.3-.9 0-1.2-.3-.3-.9-.3-1.2 0l-4.5 4.7-4.5-4.7c-.3-.3-.9-.3-1.2 0-.2.1-.3.4-.3.6 0 .2.1.4.3.6l5.1 5.3c.3.4.9.4 1.2 0Z" fill="#000"/></svg>
+           </button>
            <ul class="sorting-cart-list">
              <li class="sorting-cart">
               <a class="sort-button first" href="#" >
